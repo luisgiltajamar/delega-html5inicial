@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">Uno</a>
+                </li>
+                <li>
+                    <a href="#">Uno</a>
+                </li>
+                <li>
+                    <a href="#">Uno</a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+    <article>
+        <section>
+            <h1>Formulario</h1>
+            <form>
+                <label for="txtNombre">Nombre</label>
+                <input type="text" id="txtNombre" name="txtNombre" required="required" />
+                <br />
+                <label for="txtEdad">Edad</label>
+                <input type="number" min="18" max="99" 
+                       id="txtEdad" name="txtEdad" required="required" />
+                <br />
+                <label for="txtNif">Nif</label>
+                <input type="text" pattern="^([0-9]{8}[A-Za-z])|([A-Z][0-9]{8})$"
+                       id="txtNif" name="txtNif" required="required" />
+                <br />
+
+                <label for="txtFecha">Fecha</label>
+                <input type="date" 
+                       id="txtFecha" name="txtFecha" required="required" />
+                <br />
+                <input type="submit" value="Guardar"/>
+                <button type="button">Enviar</button>
+            </form>
+        </section>
+        <section><h1>Datos</h1></section>
+    </article>
+    <footer>
+        <span>Lo que quiero meter en el pie</span>
+    </footer>
+</body>
+</html>
